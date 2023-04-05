@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * find the squreroot of  n
- * @n is the  number to be squred
- *Return 0;
+ * _sqrt_recursion - find the squreroot of a number
+ *
+ * @n : is the  number to be squred
+ *
+ * Return: (i * (_sqrt_recursion(n)))
  */
 
 int _sqrt_recursion(int n)
@@ -16,6 +18,6 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-return (i * (_sqrt_recursion (n)));
+		return (i * (_sqrt_recursion(n)));
+	}
 }
-}	 
