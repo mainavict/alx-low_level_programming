@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * malloc_check - checks normal process termination with 98.
  *
@@ -9,11 +9,11 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	void *i;
+	void *p;
 
-	i = malloc(b);
+	p = malloc(b);
 
-	if (i == NULL)
+	if (p == NULL)
 		exit(98);
-	return (i);
+	return (p);
 }
