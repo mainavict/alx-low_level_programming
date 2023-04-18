@@ -2,16 +2,17 @@
 #include "dog.h"
 
 /**
- *  _strlen - a function that gets a length of string
+ *  free_dog - frees the dog
+ *  @d: pointer to dog to free
  *
- *  @str: the string to get the length
- *   Return: length of @str
+ *  Return: void
  */
-int _strlen(const char *str)
+void free_dog(dog_t *d)
 {
-	int l = 0;
-
-	while (*str++)
-		l++;
-	return (length);
+	if (d)
+	{
+		free(d->name);
+		free(d->owner);
+		free(d);
+	}
 }
