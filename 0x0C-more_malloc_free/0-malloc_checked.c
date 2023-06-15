@@ -11,11 +11,11 @@ void *malloc_checked(unsigned int b)
 {
 	void *ptr;
 
-	ptr = (int) malloc(b * sizeof(int));
+	ptr = (int*) malloc(b * sizeof(int));
 
 	if (ptr == NULL)
 	{
-		return (98);
+		exit (98);
 	}
-	return (p);
+	return (ptr);
 }
