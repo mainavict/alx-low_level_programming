@@ -25,9 +25,9 @@ list_t *add_node_end(list_t **head, const char *str)
 	while (str[i])
 	{
 		i++;
-	}
+
 	len = i;
-	
+
 	new->str = str_dup;
 	new->len = len;
 	new->next = NULL;
