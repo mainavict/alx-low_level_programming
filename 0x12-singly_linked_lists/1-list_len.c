@@ -9,21 +9,13 @@ size_t list_len(const list_t *h)
 {
 	size_t i;
 
-	int str_count = 0;
-
-	int len_count = 0;
+	int len = 0;
 
 	while (h)
 	{
-		if (h->str != NULL)
-		{
-			str_count++;
-		}
-		if (h->len != '\0')
-		{
-			len_count++;
-		}
-		i = (len_count + str_count);
+		len++;
+		h = h->next;
 	}
+	i = len;
 	return (i);
 }
